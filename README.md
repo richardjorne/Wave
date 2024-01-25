@@ -148,7 +148,7 @@ Just bind it to your `Float` variable!
 
 `waveColor`: `Color`, the wave's color.
 
-`progressAnimation`: `Animation?`, the animation when the progress changes. Can't stand if there's no animation when such a big stuff changes. Set to `nil` if you don't want animation, but, deprecated.
+`progressAnimation`: `Animation?`, the animation when the progress changes. Can't stand if there's no animation when such a big stuff changes. Set to `nil` if you don't want animation, but, strongly discouraged.
 
 
 
