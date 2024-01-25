@@ -17,8 +17,6 @@ Let's see how it works. [English Document](#english)
 
 话不多说，来看看怎么用吧。
 
----
-
 # Usage 使用方法
 
 ```swift
@@ -47,8 +45,6 @@ Wave(progress: <#T##Binding<Float>#>,
 `progressAnimation`: `Animation?`，波浪的progress在改变时的动画。不能接受这么大个东西在动的时候还没有动画。但你执意不要动画的话就设置为nil吧。
 
 
-
----
 
 # A Better Wave 更舒适的波浪
 
@@ -80,8 +76,6 @@ struct TestView: View {
 你也可以加更多的Wave，至于初相位具体该怎么设置也要由你来决定。
 
 【】这是叠加了两个Wave后的样子，非常漂亮。
-
----
 
 # About This Project 寻根溯源
 
@@ -158,8 +152,6 @@ Just bind it to your `Float` variable!
 
 
 
----
-
 # A Better Wave
 
 If you pursue perfection like I do, you may think that one wave may not be real enough. Inspired by [noa4021J](https://github.com/noa4021J/WaveAnimationView), stacking multiple waves may make it look more genuine.
@@ -190,8 +182,6 @@ You'll find that I used `wavePhaseDegree`. This parameter allows you to create m
 But about the value...Well...It's up to you :)
 
 【】 This is what it looks like when I stack two `Wave`s. Stunning.
-
----
 
 # About This Project
 
