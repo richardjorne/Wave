@@ -124,7 +124,7 @@ struct TestView: View {
 
 ~~但反正最后的结果就是我可以用SwiftUI原生的动画，而不是Timer来为进度变化添加动画。~~
 
-**感谢[Benzy Neez](https://stackoverflow.com/questions/77881336/how-to-simultaneously-perform-multiple-animations-to-one-element-in-swiftui?noredirect=1#comment137302456_77881336)的答案，最终我可以完全摆脱Timer，只使用SwiftUI的Animation。不过，其中一个用的是Metal的动画，另一个是CoreAnimation。**
+**感谢[Benzy Neez](https://stackoverflow.com/questions/77881336/how-to-simultaneously-perform-multiple-animations-to-one-element-in-swiftui)的答案，最终我可以完全摆脱Timer，只使用SwiftUI的Animation。不过，其中一个用的是Metal的动画，另一个是CoreAnimation。**
 
 有人反馈一杯的波浪在进度大幅度改变的时候会有掉帧的感觉...这个我当时很努力地尝试过，可是没有任何改进。我觉得在变为SwiftUI的原生动画之后应该可以解决这个问题，而且还可以更好地适配ProMotion。
 
@@ -255,7 +255,7 @@ Then I wrote this code with my own thoughts, and, interestingly, it takes less t
 
 ~~But anyway, we can use SwiftUI's animation to animate the progress change now, instead of `Timer`, which is what I used on A Cup.~~
 
-**Thanks to [Benzy Neez](https://stackoverflow.com/questions/77881336/how-to-simultaneously-perform-multiple-animations-to-one-element-in-swiftui?noredirect=1#comment137302456_77881336), I can now get rid of `Timer` and use SwiftUI's Animation only. One is powered by `Metal` and the other is using `CoreAnimation`.**
+**Thanks to [Benzy Neez](https://stackoverflow.com/questions/77881336/how-to-simultaneously-perform-multiple-animations-to-one-element-in-swiftui), I can now get rid of `Timer` and use SwiftUI's Animation only. One is powered by `Metal` and the other is using `CoreAnimation`.**
 
 Some of my users told me that there was a frame drop when the progress changed rapidly. I did put a lot of effort into the improvement but nothing worked. I think this time, changing everything to SwiftUI's animation can solve this problem, and can work better with ProMotion.
 
