@@ -11,7 +11,7 @@ May you create marvelous waves with `Wave`!
 
 使用`Wave`，你可以实现令人愉悦的波浪效果。
 
-[]
+<img src="https://github.com/richardjorne/Wave/blob/main/SingleWave.gif?raw=true" alt="single wave" style="zoom:30%;" /><img src="https://github.com/richardjorne/Wave/blob/main/DoubleWave.gif?raw=true" alt="double wave" style="zoom:30%;" />
 
 Let's see how it works. [English Document](#english)
 
@@ -83,7 +83,17 @@ struct TestView: View {
 
 你也可以加更多的Wave，至于初相位具体该怎么设置也要由你来决定。
 
-【】这是叠加了两个Wave后的样子，非常漂亮。
+<img src="https://github.com/richardjorne/Wave/blob/main/DoubleWave.gif?raw=true" alt="double wave" style="zoom:30%;" />
+
+这是叠加了两个Wave后的样子，非常漂亮。
+
+
+
+# Animating Progress Change 进度变化动画
+
+`Wave`的特别之处在于你可以让进度变化变得更好看。
+
+<img src="https://github.com/richardjorne/Wave/blob/main/DoubleWaveProgressChangeSmooth.gif?raw=true" alt="animating progress change" style="zoom:30%;" />
 
 # About This Project 寻根溯源
 
@@ -197,7 +207,17 @@ You'll find that I used `wavePhaseDegree`. This parameter allows you to create m
 
 But about the value...Well...It's up to you :)
 
-【】 This is what it looks like when I stack two `Wave`s. Stunning.
+<img src="https://github.com/richardjorne/Wave/blob/main/DoubleWave.gif?raw=true" alt="double wave" style="zoom:30%;" />
+
+This is what it looks like when I stack two `Wave`s. Stunning.
+
+# Animating Progress Change
+
+`Wave` allows you to add beautiful non-linear animations to your progress change.
+
+<img src="https://github.com/richardjorne/Wave/blob/main/DoubleWaveProgressChangeSmooth.gif?raw=true" alt="animating progress change" style="zoom:30%;" />
+
+
 
 # About This Project
 
