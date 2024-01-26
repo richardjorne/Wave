@@ -1,5 +1,4 @@
 # Wave
-
 A SwiftUI View that implements a comfortable fluid-like animated wave.
 
 一个用SwiftUI写的波浪动画
@@ -9,6 +8,7 @@ A SwiftUI View that implements a comfortable fluid-like animated wave.
 # Overview 概览
 
 May you create marvelous waves with `Wave`!
+
 使用`Wave`，你可以实现令人愉悦的波浪效果。
 
 []
@@ -185,40 +185,44 @@ But about the value...Well...It's up to you :)
 
 # About This Project
 
-这是我做的第二个SwiftUI开源项目。
+This is my second open-source SwiftUI project.
 
-作为[一杯](https://apps.apple.com/cn/app/一杯/id1595167189)的开发者，我发现自己越来越喜欢SwiftUI而不是UIKit了。
+As the developer of [A Cup](https://apps.apple.com/cn/app/一杯/id1595167189), I find myself loving SwiftUI more instead of UIKit.
 
-一杯最初是完全由UIKit写成的，当时的我也是完完全全的Swift新手。这几年我一直都在实践中不断地学习，不断发现更优雅的代码的写法。写一杯的时候逐渐熟悉了UIKit（但也没有那么熟悉），到后来写一杯的Widget和[阁楼](https://apps.apple.com/cn/app/阁楼-效率提升好帮手/id6447677830)， 我才接触到了SwiftUI。慢慢地，越写越上手，越写越感觉比UIKit方便很多。
+A Cup was originally completely written in UIKit, when I was pretty new to Swift. I've been learning through practice for the past few years, and kept finding ways to write better and more elegant codes. I knew UIKit more through writing A Cup and started to get familiar with SwiftUI when writing widgets for A Cup and [Attic](https://apps.apple.com/cn/app/阁楼-效率提升好帮手/id6447677830). Little by little, I started to feel the convenience of SwiftUI.
 
-当初选择UIKit的时候我还好像什么都不会， 所有地方都好像只能用别人的库。也是因为这些年积累下来库比较多我才选择的UIKit。可是后来我甚至有点感觉UIKit的程序有点写不下去了的时候，我感觉是时候改变一下了。
+When I chose to write A Cup with UIKit, I felt like knowing nothing, and I could only use libraries from others. Actually, one of the reasons I chose UIKit was because the amount of libraries was much greater than SwiftUI. But then I felt like it was tedious writing UIKit codes, and I couldn't stand more.
 
-我发现自己好像有能力能开始写点东西。虽然不多，也不是很复杂， 但能让SwiftUI的社区变得更完善，我感觉是一件挺棒的事。
+It's time to change.
 
-在用其他人的库的时候，我发现一些库用起来其实没有那么自由。因此当我在写自己的库的时候，我希望能尽量让它保持更大的自由度，同时又保证用起来尽量简单，比如由你来选择是使用单个Wave还是多个组合起来。希望我的库对你能有所帮助：） 
+I felt like I could finally start to write something, and make some contributions to the SwiftUI community, although it's not very sophisticated. I feel great.
 
+When using other libraries, I found that some were not quite flexible. So when creating my own libraries, I hope to keep the flexibility while ensuring the usage to be simple. For example, you can choose to use a single wave or combine multiple waves together.
 
-
-最后讲讲关于这个项目的小花絮
-
-其实很早就想读懂[noa4021J](https://github.com/noa4021J/WaveAnimationView)的代码并进行改进， 但无奈一直都看不太懂。。。
-
-后来就按照自己的想法写了一下这个代码， 很神奇的一点是我居然只用了不到100行？（虽然还是折腾了好几天）
-
-然后关于动画，Wave涉及两个动画：一个是波浪本身要不断运动，第二个是进度变化的时候波浪的位置高度也要变化。 我很努力地花了很久，试图让进度变化的动画发生的时候波浪依旧运动， 可是没有找到同时进行两个动画的解决办法，网上也搜不到，无奈只好继续用Timer（）
-
-但反正最后的结果就是我可以用SwiftUI原生的动画，而不是Timer来为进度变化添加动画。
-
-有人反馈一杯的波浪在进度大幅度改变的时候会有掉帧的感觉...这个我当时很努力地尝试过，可是没有任何改进。我觉得在变为SwiftUI的原生动画之后应该可以解决这个问题，而且还可以更好地适配ProMotion。
+I hope my library can make a day for you :)
 
 
 
-第一个项目请参阅：[RingRangeSelector](https://github.com/richardjorne/RingRangeSelector)
+Another little story about this project:
+
+A long time ago I tried to understand [noa4021J](https://github.com/noa4021J/WaveAnimationView)'s code and make some improvements, but it was a little hard for me to understand...
+
+Then I wrote this code with my own thoughts, and, interestingly, it takes less than 100 lines(although it still took me pretty much time)
+
+About the animation, there are two animations for the wave: one to keep the wave moving and the other to animate the progress change of the wave. It took me a lot of time to keep the wave moving while animating the progress change, but I couldn't find a solution on the Internet. The animation of the wave moving just gets interrupted. So finally I could only use a `scheduledTimer`.
+
+But anyway, we can use SwiftUI's animation to animate the progress change now, instead of `Timer`, which is what I used on A Cup.
+
+Some of my users told me that there was a frame drop when the progress changed rapidly. I did put a lot of effort into the improvement but nothing worked. I think this time, changing everything to SwiftUI's animation can solve this problem, and can work better with ProMotion.
 
 
 
-祝你度过愉快的一天！
+My first project: [RingRangeSelector](https://github.com/richardjorne/RingRangeSelector)
 
-此致
+
+
+Wish you a nice day!
+
+Best,
 
 Richard Jorne
