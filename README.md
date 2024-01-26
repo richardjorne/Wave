@@ -120,9 +120,11 @@ struct TestView: View {
 
 后来就按照自己的想法写了一下这个代码， 很神奇的一点是我居然只用了不到100行？（虽然还是折腾了好几天）
 
-然后关于动画，Wave涉及两个动画：一个是波浪本身要不断运动，第二个是进度变化的时候波浪的位置高度也要变化。 我很努力地花了很久，试图让进度变化的动画发生的时候波浪依旧运动， 可是没有找到同时进行两个动画的解决办法，网上也搜不到，无奈只好继续用Timer（）
+~~然后关于动画，Wave涉及两个动画：一个是波浪本身要不断运动，第二个是进度变化的时候波浪的位置高度也要变化。 我很努力地花了很久，试图让进度变化的动画发生的时候波浪依旧运动， 可是没有找到同时进行两个动画的解决办法，网上也搜不到，无奈只好继续用Timer（）~~
 
-但反正最后的结果就是我可以用SwiftUI原生的动画，而不是Timer来为进度变化添加动画。
+~~但反正最后的结果就是我可以用SwiftUI原生的动画，而不是Timer来为进度变化添加动画。~~
+
+**感谢[Benzy Neez](https://stackoverflow.com/questions/77881336/how-to-simultaneously-perform-multiple-animations-to-one-element-in-swiftui?noredirect=1#comment137302456_77881336)的答案，最终我可以完全摆脱Timer，只使用SwiftUI的Animation。不过，其中一个用的是Metal的动画，另一个是CoreAnimation。**
 
 有人反馈一杯的波浪在进度大幅度改变的时候会有掉帧的感觉...这个我当时很努力地尝试过，可是没有任何改进。我觉得在变为SwiftUI的原生动画之后应该可以解决这个问题，而且还可以更好地适配ProMotion。
 
@@ -235,7 +237,7 @@ When I chose to write A Cup with UIKit, I felt like knowing nothing, and I could
 
 It's time to change.
 
-I felt like I could finally start to write something, and make some contributions to the SwiftUI community, although it's not very sophisticated. I feel great.
+I felt like I could finally start to write something, and make some contributions to SwiftUI community, although what I can do is not very sophisticated. I feel great.
 
 When using other libraries, I found that some were not quite flexible. So when creating my own libraries, I hope to keep the flexibility while ensuring the usage to be simple. For example, you can choose to use a single wave or combine multiple waves together.
 
@@ -249,9 +251,11 @@ A long time ago I tried to understand [noa4021J](https://github.com/noa4021J/Wav
 
 Then I wrote this code with my own thoughts, and, interestingly, it takes less than 100 lines(although it still took me pretty much time)
 
-About the animation, there are two animations for the wave: one to keep the wave moving and the other to animate the progress change of the wave. It took me a lot of time to keep the wave moving while animating the progress change, but I couldn't find a solution on the Internet. The animation of the wave moving just gets interrupted. So finally I could only use a `scheduledTimer`.
+~~About the animation, there are two animations for the wave: one to keep the wave moving and the other to animate the progress change of the wave. It took me a lot of time to keep the wave moving while animating the progress change, but I couldn't find a solution on the Internet. The animation of the wave moving just gets interrupted. So finally I could only use a `scheduledTimer`.~~
 
-But anyway, we can use SwiftUI's animation to animate the progress change now, instead of `Timer`, which is what I used on A Cup.
+~~But anyway, we can use SwiftUI's animation to animate the progress change now, instead of `Timer`, which is what I used on A Cup.~~
+
+**Thanks to [Benzy Neez](https://stackoverflow.com/questions/77881336/how-to-simultaneously-perform-multiple-animations-to-one-element-in-swiftui?noredirect=1#comment137302456_77881336), I can now get rid of `Timer` and use SwiftUI's Animation only. One is powered by `Metal` and the other is using `CoreAnimation`.**
 
 Some of my users told me that there was a frame drop when the progress changed rapidly. I did put a lot of effort into the improvement but nothing worked. I think this time, changing everything to SwiftUI's animation can solve this problem, and can work better with ProMotion.
 
