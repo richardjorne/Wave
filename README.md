@@ -1,7 +1,7 @@
 # Wave
-A SwiftUI View that implements a comfortable fluid-like animated wave.
+A SwiftUI View that implements a comfortable fluid-like animated wave with animated progress change.
 
-一个用SwiftUI写的波浪动画
+一个用SwiftUI写的波浪动画，进度改变的时候也有美好的动效。
 
 ---
 
@@ -16,6 +16,14 @@ May you create marvelous waves with `Wave`!
 Let's see how it works. [English Document](#english)
 
 话不多说，来看看怎么用吧。
+
+# Installation 安装方法
+
+直接复制`/Wave.swift`到项目即可。
+
+Swift Package Manager 根本没法用，Xcode本身也有一些限制，因此放弃。
+
+CocoaPods等我搞懂了就做。
 
 # Usage 使用方法
 
@@ -122,6 +130,14 @@ Richard Jorne
 <span id="english"></span>
 
 # English Document
+
+# Installation
+
+Just copy `/Wave.swift` to your project.
+
+Due to some Xcode limitations, I couldn't use SPM, so no SPM.
+
+CocoaPods support is excepted in future.
 
 # Usage
 
