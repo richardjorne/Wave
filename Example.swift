@@ -26,7 +26,7 @@ struct TestView: View {
             Wave(progress: $progress, waveHeight: 15, wavePhaseDegree: 180, waveDuration: 2.5, waveColor: Color(front).opacity(0.4), progressAnimation: .easeInOut(duration: 0.8))
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment: .center, spacing: 30) {
-                Text("progress: \(progress.description)")
+                Text("progress: \(String(format: "%.1f", progress))")
                 Stepper(value: $progress, in: 0.0...1.0, step: 0.1) {
                 }
                 .frame(width: 0, height: 0, alignment: .center)
@@ -71,7 +71,7 @@ struct TestView: View {
 //            Wave(progress: $progress,waveColor: Color(front).opacity(0.65))
 //                .edgesIgnoringSafeArea(.all)
 //            VStack(alignment: .center, spacing: 30) {
-//                Text("progress: \(progress.description)")
+//                Text("progress: \(String(format: "%.1f", progress))")
 //                Stepper(value: $progress, in: 0.0...1.0, step: 0.1) {
 //                }
 //                .frame(width: 0, height: 0, alignment: .center)
