@@ -12,9 +12,9 @@ May you create marvelous waves with `Wave`!
 使用`Wave`，你可以实现令人愉悦的波浪效果。
 
 
-| Single Wave | Multiple Wave |
-|---|---|
-| ![single wave](https://github.com/richardjorne/Wave/blob/main/SingleWave.gif?raw=true) | ![double wave](https://github.com/richardjorne/Wave/blob/main/DoubleWave.gif?raw=true)
+| Single Wave | Multiple Wave | Animated Progress Change |
+|---|---|---|
+| ![single wave](https://github.com/richardjorne/Wave/blob/main/SingleWave.gif?raw=true) | ![double wave](https://github.com/richardjorne/Wave/blob/main/DoubleWave.gif?raw=true) | ![animated progress change](https://github.com/richardjorne/Wave/blob/main/DoubleWaveProgressChangeSmooth.gif?raw=true)
 
 Let's see how it works. [English Document](#english)
 
@@ -96,7 +96,7 @@ struct TestView: View {
 
 `Wave`的特别之处在于你可以让进度变化变得更好看。
 
-![animating progress change](https://github.com/richardjorne/Wave/blob/main/DoubleWaveProgressChangeSmooth.gif?raw=true)
+使用`progressAnimation`参数，添加`.easeInOut()`等动画创造你自己的`Wave`吧。
 
 # About This Project 寻根溯源
 
@@ -220,7 +220,7 @@ This is what it looks like when I stack two `Wave`s. Stunning.
 
 `Wave` allows you to add beautiful non-linear animations to your progress change.
 
-![animating progress change](https://github.com/richardjorne/Wave/blob/main/DoubleWaveProgressChangeSmooth.gif?raw=true)
+Use`progressAnimation` with animations like `.easeInOut()` to make your own `Wave`!
 
 
 
